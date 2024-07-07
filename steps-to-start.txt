@@ -1,0 +1,12 @@
+Deploy services using commands
+
+minikube start
+kubectl apply -f backend-deployment.yaml
+kubectl apply -f frontend-deployment.yaml
+kubectl get deployments
+kubectl get services
+minikube service frontend-service --url
+(Copy url paste in browser)
+
+Delete all:
+kubectl delete all --all
